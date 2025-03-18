@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>document</title>
+</head>
+<body>
+    <h1>Methods And Loops</h1>
+    <script>
+        let num = Math.random() * 100;
+        let ans = Math.round(num);
+        document.write("Rounded Number: " + ans);
+
+        document.write ("<br>")
+        document.write ("<br>")
+
+        let today = new Date();
+        let dateParts = [today.getDate(), today.getMonth() + 1, today.getFullYear()];
+        let dateString = "";
+
+        for (let i = 0; i < dateParts.length; i++) {
+            dateString += dateParts[i] + (i < dateParts.length - 1 ? "/" : "");
+        }
+
+        document.write("Today's Date: " + dateString);
+    </script>
+</body>
+</html>
